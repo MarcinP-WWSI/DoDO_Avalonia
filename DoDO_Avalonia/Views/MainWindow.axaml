@@ -14,7 +14,25 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
+    <Grid RowDefinitions="Auto,*">
+         <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <StackPanel Orientation="Horizontal">
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button
+            Content="Dodaj wynik"
+            Command="{Binding SaveTestResultCommand}" />
+
+        <Button
+            Content="Wczytaj"
+            Command="{Binding LoadResultsCommand}" />
+
+    </StackPanel>
+
+    <DataGrid
+        Grid.Row="1"
+        ItemsSource="{Binding Results}" />
+
+</Grid>
+   
 
 </Window>

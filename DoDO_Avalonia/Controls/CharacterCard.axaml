@@ -1,0 +1,25 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border Padding="10"
+            Margin="5">
+
+        <StackPanel>
+
+            <TextBlock
+                Text="{Binding Name}" />
+
+            <TextBlock
+                Text="{Binding HP,
+                       StringFormat='HP: {0}'}"/>
+
+            <TextBlock
+                Text="{Binding Damage,
+                       StringFormat='DMG: {0}'}"/>
+
+        </StackPanel>
+
+    </Border>
+
+</UserControl>
