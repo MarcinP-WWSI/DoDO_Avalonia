@@ -4,7 +4,7 @@ using DoDO.CharacterData;
 
 namespace DoDO.GameClasses
 {
-    class Program
+    class ProgramOLD
     {
 
 
@@ -25,7 +25,7 @@ namespace DoDO.GameClasses
 
           }*/
 
-        static void Main()
+        static void MainOLD()
         {
             Character player;
             //Character enemy = new Warrior("Goblin");
